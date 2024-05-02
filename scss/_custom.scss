@@ -7,7 +7,11 @@ $secondary: #ACC89D;
 $dark: #095228;
 $black: #3F301D;
 $font-family-sans-serif: "Luckiest Guy", sans-serif !default;
-$font-family-serif: "Montserrat", serif !default;
+$font-family-sans-serif: "Montserrat", sans-serif !default;
+
+.navbar {
+   font-family: 'Montserrat', sans-serif;
+}
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
