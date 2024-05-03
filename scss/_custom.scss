@@ -6,9 +6,9 @@ $primary: #1E8810;
 $secondary: #ACC89D;
 $dark: #095228;
 $black: #3F301D;
+$night: black;
+$white: white;
 $font-family-sans-serif: "Luckiest Guy", sans-serif !default;
-$font-family-sans-serif: "Montserrat", sans-serif !default;
+$font-family-text: "Montserrat", sans-serif !default;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-// Then add additional custom code here
