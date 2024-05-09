@@ -12058,6 +12058,32 @@ h3, .h3 {
   justify-content: center;
 }
 
+.hero-scene-connexion {
+  position: relative;
+}
+.hero-scene-connexion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/Train\ 5.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+}
+.hero-scene-connexion * {
+  position: relative;
+}
+.hero-scene-connexion .hero-scene-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .custom-btn {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -12214,6 +12240,15 @@ h3, .h3 {
   padding: 10px;
   background: #1E8810;
   border-radius: 15px;
+  margin-top: 5px;
+}
+
+.custom-container-4 {
+  width: 95%;
+  padding: 10px;
+  background: #ACC89D;
+  border-radius: 15px;
+  margin-top: 15px;
 }
 
 ::-webkit-scrollbar {
