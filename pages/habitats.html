@@ -1,0 +1,317 @@
+<div class="hero-scene-habitats text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Habitats</h1>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="text-center text-black pt-4">Les habitats</h1>
+    <p class="text-danger text-center">Cliquez sur l'image pour afficher la description de l'habitat ainsi le détail de ses animaux</p>
+    <div class="text-center pt-1" data-show="admin">
+        <button type="button" class="btn btn-primary custom-btn" data-bs-toggle="modal" data-bs-target="#EditionHabitatsModal">Modifier les habitats</button>
+    </div>
+    <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img type="button" data-bs-toggle="modal" data-bs-target="#LaForetTropicaleVivanteModal" src="../img/Enclos 6.jpg" alt="" class="rounded-l w-100"/>
+                <h3 class="custom-container-3 text-center text-white">La Forêt Tropicale Vivante</h3>
+                <div class="action-image-buttons" data-show="admin">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionHabitatsModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteHabitatsModal"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img type="button" data-bs-toggle="modal" data-bs-target="#LaSavaneAfricaineModal" src="../img/Enclos 7.jpg" alt="" class="rounded-l w-100"/>
+                <h3 class="custom-container-3 text-center text-white">La Savane Africaine</h3>
+                <div class="action-image-buttons" data-show="admin">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionHabitatsModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteHabitatsModal"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img type="button" data-bs-toggle="modal" data-bs-target="#LaToundraArctiqueModal" src="../img/Enclos 15.jpg" alt="" class="rounded-l w-100"/>
+                <h3 class="custom-container-3 text-center text-white">La Toundra Arctique</h3>
+                <div class="action-image-buttons" data-show="admin">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionHabitatsModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteHabitatsModal"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+        </div>  
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img type="button" data-bs-toggle="modal" data-bs-target="#LaForetBorealeModal" src="../img/Enclos 11.jpg" alt="" class="rounded-l w-100"/>
+                <h3 class="custom-container-3 text-center text-white">La Forêt Boréale</h3>
+                <div class="action-image-buttons" data-show="admin">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionHabitatsModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteHabitatsModal"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img type="button" data-bs-toggle="modal" data-bs-target="#LaFermeTraditionnelleModal" src="../img/Enclos 12.jpg" alt="" class="rounded-l w-100"/>
+                <h3 class="custom-container-3 text-center text-white">La Ferme Traditionnelle</h3>
+                <div class="action-image-buttons" data-show="admin">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionHabitatsModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteHabitatsModal"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img type="button" data-bs-toggle="modal" data-bs-target="#LOceanariumMarinModal" src="../img/Enclos 13.jpg" alt="" class="rounded-l w-100"/>
+                <h3 class="custom-container-3 text-center text-white">L'Océanarium Marin</h3>
+                <div class="action-image-buttons" data-show="admin">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionHabitatsModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteHabitatsModal"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal edition -->
+<div class="modal fade" id="EditionHabitatsModal" tabindex="-1" aria-labelledby="EditionHabitatsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" id="EditionHabitatsModalLabel">Edition Habitat</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="HabitatNameInput" class="form-label">Titre</label>
+                  <input type="text" class="form-control" id="HabitatNameInput" placeholder="Nom Habitat" name="HabitatName"> 
+                </div>
+                <div class="mb-3">
+                  <label for="HabitatImageInput" class="form-label">Image</label>
+                  <input type="file" class="form-control" id="HabitatImageInput"  name="HabitatImage">
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="DeleteHabitatsModal" tabindex="-1" aria-labelledby="DeleteHabitatsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" id="DeleteHabitatsModalLabel">Êtes-vous sûrs de vouloir supprimer cet habitat ?</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <p>Titre</p>
+                    <img src="../img/Enclos 6.jpg" alt="" class="rounded-l w-100"/>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-danger">Supprimer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="InfoAnimauxModal" tabindex="-1" aria-labelledby="InfoAnimauxModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" id="InfoAnimauxModalLabel">Détail de l'animal</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="AnimauxNameInput" class="form-label">Prénom</label>
+                </div>
+                <div class="mb-3">
+                  <label for="AnimauxProprietesInput" class="form-label">Propriétés de l'animal</label>
+                </div>
+                <div class="mb-3">
+                    <label for="AnimauxAvisInput" class="form-label">Avis du vétérinaire</label>
+                  </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="LaForetTropicaleVivanteModal" tabindex="-1" aria-labelledby="LaForetTropicaleVivanteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="LaForetTropicaleVivanteLabel">La Forêt Tropicale Vivante</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <article>
+                <div>
+                    <img src="../img/Enclos 6.jpg" alt="" class="rounded-l w-100"/>
+                </div>
+                <div>
+                    <p class="text-justify pt-4">
+                        Un habitat luxuriant et humide, recréant l'ambiance d'une forêt tropicale avec une grande variété d'espèces d'oiseaux colorés, de singes agiles et de reptiles exotiques.                    
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h3>
+                    Les animaux
+                </h3>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Maya.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Maya - Perroquet ara</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Milo.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Milo - Ouistiti pygmée</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Kiki.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Kiki - Paresseux</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Rio.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Rio - Anaconda</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Lola.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Lola - Léopard</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Tico.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Tico - Toucan</h3>
+                </div>
+            </article>
+            <div class="text-center pt-3">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="LaSavaneAfricaineModal" tabindex="-1" aria-labelledby="LaSavaneAfricaineModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="LaSavaneAfricaineModalLabel">La Savane Africaine</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <article>
+                <div>
+                    <img src="../img/Enclos 7.jpg" alt="" class="rounded-l w-100"/>
+                </div>
+                <div>
+                    <p class="text-justify pt-4">
+                        Un vaste espace ouvert où les visiteurs peuvent observer des troupeaux d'éléphants majestueux, des girafes gracieuses et des lions se prélassant au soleil.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h3>
+                    Les animaux
+                </h3>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Simba.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Simba - Lion</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Zara.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Zara - Zèbre</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Juma.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Juma - Girafe</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Tariq.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Tariq - Gnou</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Shani.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Shani - Hyène</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Rafiki.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Rafiki - Éléphant</h3>
+                </div>
+            </article>
+            <div class="text-center pt-3">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="LaToundraArctiqueModal" tabindex="-1" aria-labelledby="LaToundraArctiqueModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="LaToundraArctiqueModalLabel">La Savane Africaine</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <article>
+                <div>
+                    <img src="../img/Enclos 15.jpg" alt="" class="rounded-l w-100"/>
+                </div>
+                <div>
+                    <p class="text-justify pt-4">
+                        Un environnement glacial recréant les vastes étendues de la toundra, où les visiteurs peuvent voir des ours polaires nager dans des piscines géantes et des rennes brouter paisiblement.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h3>
+                    Les animaux
+                </h3>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Nika.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Nika - Ours polaire</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Tundra.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Tundra - Renne</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Frost.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Frost - Harfang des neiges</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Nanook.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Nanook - Loup arctique</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Aurora.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Aurora - Renard arctique</h3>
+                </div>
+                <div class="pt-3">
+                    <img type=button data-bs-toggle="modal" data-bs-target="#InfoAnimauxModal" src="../img/Glacier.jpg" alt="" class="rounded-l w-100"/>
+                    <h3 class="custom-container-3 text-center text-white">Glacier - Phoque barbu</h3>
+                </div>
+            </article>
+            <div class="text-center pt-3">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>

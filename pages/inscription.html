@@ -1,0 +1,39 @@
+<div class="hero-scene-connexion text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Inscription</h1>
+    </div>
+</div>
+
+<div class="container custom-container-4 mb-10">
+    <form>
+        <h1 class="pt-4 text-center">Inscription</h1>
+        <div class="mb-3 pt-4">
+          <input type="email" class="form-control" id="EmailInput" placeholder="email@arcadia.fr" name="Email"> 
+          <div class="invalid-feedback">
+            Le mail n'est pas au bon format
+          </div>
+        </div>
+        <div class="mb-3 pt-4">
+          <input type="password" class="form-control" id="PasswordInput" placeholder="Mot de passe" name="Password">
+          <div class="invalid-feedback">
+            Votre mot de passe doit contenir au moins 8 caractères comprenant au moins une majuscule, une minuscule, un chiffre et un caractère spécial
+          </div>
+        </div>
+        <div class="mb-3 pt-4">
+            <input type="password" class="form-control" id="ValidatePasswordInput" placeholder="Validez votre mot de passe" name="ValidatePassword">
+            <div class="invalid-feedback">
+                Vos mots de passes doivent être identiques
+            </div>
+        </div>
+        <div class="text-center pt-2">
+            <select class="align-items-center mb-4" name="role">
+                <option value="">Choisir un rôle</option>
+                <option value="employe">Employé</option>
+                <option value="veterinaire">Vétérinaire</option>
+            </select>
+            <div class="col">
+                <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscription</button>
+            </div>
+        </div>
+    </form>
+</div>

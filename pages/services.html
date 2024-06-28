@@ -6,6 +6,9 @@
 
 <section>
     <article>
+        <div class="text-center pt-4" data-show="admin">
+            <button type="button" class="btn btn-primary custom-btn" data-bs-toggle="modal" data-bs-target="#EditionServicesModal">Modifier les services</button>
+        </div>
         <div class="container p-4">
             <h1 class="text-center text-black">Nos restaurants</h1>
             <div class="row row-cols-3 responsive-containers">
@@ -36,7 +39,7 @@
     <article class="bg-secondary">
         <div class="container p-4">
             <h1 class="text-center text-black">Visiter le zoo en train</h1>
-            <div id="carouselAnimaux" class="carousel slide pt-3">
+            <div id="carouselServices" class="carousel slide pt-3">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="/img/Train 1.jpg" class="d-block w-100 rounded-xl" alt="">
@@ -54,17 +57,14 @@
                     <img src="/img/Train 5.jpg" class="d-block w-100 rounded-xl" alt="">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAnimaux" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselAnimaux" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselServices" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-            </div>
-            <div class="text-center pt-4">
-                <button type="button" href="#" class="btn btn-primary custom-btn">Réserver une place</button>
             </div>
         </div>
     </article>
@@ -81,9 +81,36 @@
                     </p>
                 </div>
             </div>
-            <div class="text-center pt-4">
-                <a href="/services" class="btn btn-primary custom-btn">Horaires des visites guidées</a>
-            </div>
         </div>
     </article>
 </section>
+
+<div class="modal fade" id="EditionServicesModal" tabindex="-1" aria-labelledby="EditionServicesModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" id="EditionServicesModalLabel">Edition Services</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="NamePhotoInput" class="form-label">Titre</label>
+                  <input type="text" class="form-control" id="NomServiceInput" placeholder="Nom Service" name="NomService"> 
+                </div>
+                <div class="mb-3">
+                    <label for="NamePhotoInput" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="DescriptionServiceInput" placeholder="Description Service" name="DescriptionService"> 
+                </div>
+                <div class="mb-3">
+                  <label for="ImageInput" class="form-label">Image</label>
+                  <input type="file" class="form-control" id="ImageInput"  name="Image">
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>

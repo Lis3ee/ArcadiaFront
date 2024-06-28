@@ -12084,7 +12084,64 @@ h3, .h3 {
   justify-content: center;
 }
 
+.hero-scene-habitats {
+  position: relative;
+}
+.hero-scene-habitats::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/Enclos\ 13.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+}
+.hero-scene-habitats * {
+  position: relative;
+}
+.hero-scene-habitats .hero-scene-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-scene-animaux {
+  position: relative;
+}
+.hero-scene-animaux::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/Animal\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+}
+.hero-scene-animaux * {
+  position: relative;
+}
+.hero-scene-animaux .hero-scene-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .custom-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.custom-btn-2 {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
@@ -12094,12 +12151,17 @@ h3, .h3 {
 }
 
 #carouselAnimaux {
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 
 #carouselHabitats {
-  width: 50%;
+  width: 100%;
+  margin: auto;
+}
+
+#carouselServices {
+  width: 100%;
   margin: auto;
 }
 
@@ -12249,6 +12311,7 @@ h3, .h3 {
   background: #ACC89D;
   border-radius: 15px;
   margin-top: 15px;
+  margin-bottom: 14pc;
 }
 
 ::-webkit-scrollbar {
@@ -12268,4 +12331,23 @@ h3, .h3 {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #1E8810;
+}
+
+.image-card {
+  position: relative;
+}
+.image-card:hover .titre-image,
+.image-card:hover .action-image-buttons {
+  opacity: 1;
+}
+.image-card .action-image-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.3s;
 }/*# sourceMappingURL=main.css.map */
