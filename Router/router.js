@@ -61,7 +61,7 @@ const LoadContentPage = async () => {
 };
 // Fonction pour gérer les événements de routage (clic sur les liens)
 const routeEvent = (event) => {
-  event = event || window.event;
+  // Empêcher le comportement par défaut du lien
   event.preventDefault();
   // Mise à jour de l'URL dans l'historique du navigateur
   window.history.pushState({}, "", event.target.href);

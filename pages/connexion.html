@@ -1,28 +1,39 @@
-<div class="hero-scene-connexion text-center text-white">
-    <div class="hero-scene-content">
-        <h1>Connexion</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="scss/main.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="hero-scene-connexion text-center text-white">
+        <div class="hero-scene-content">
+            <h1>Connexion</h1>
+        </div>
     </div>
-</div>
 
-<div class="container custom-container-4">
-    <form>
-        <h1 class="pt-4 text-center">Se connecter</h1>
-        <div class="text-center pt-3">
-            <p class="text-danger">La connexion est réservée au personnel du zoo Arcadia</p>
-        </div>
-        <div class="mb-3 pt-4">
-          <input type="email" class="form-control" id="EmailInput" placeholder="email@arcadia.fr" name="Email">
-          <div class="invalid-feedback">
-            Le mail et le mot de passe ne correspondent pas.
-          </div>
-        </div>
-        <div class="mb-3 pt-4">
-          <input type="password" class="form-control" id="PasswordInput" placeholder="Mot de passe" name="Password">
-        </div>
-        <div class="text-center pt-4 mb-2">
-            <div>
-                <button type="button" class="btn btn-primary" id="btnConnexion">Se connecter</button>
+    <div class="container custom-container-4">
+        <form id="connexionForm">
+            <h1 class="pt-4 text-center">Se connecter</h1>
+            <div class="text-center pt-3">
+                <p class="text-danger">La connexion est réservée au personnel du zoo Arcadia</p>
             </div>
-        </div>
-    </form>
-</div>
+            <div class="mb-3 pt-4">
+              <input type="email" class="form-control" id="EmailInput" placeholder="email@arcadia.fr" name="Email" required>
+              <div class="invalid-feedback">
+                Le mail et le mot de passe ne correspondent pas.
+              </div>
+            </div>
+            <div class="mb-3 pt-4">
+              <input type="password" class="form-control" id="PasswordInput" placeholder="Mot de passe" name="Password" required>
+            </div>
+            <div class="text-center pt-4 mb-2">
+                <div>
+                    <button type="submit" class="btn btn-primary" id="btnConnexion">Se connecter</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="connexion.js"></script>
+</body>
+</html>
